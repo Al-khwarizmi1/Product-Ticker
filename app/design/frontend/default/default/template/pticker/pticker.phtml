@@ -1,0 +1,91 @@
+<?php
+$isActive= Mage::getStoreConfig('pticker/general/active');
+$title= Mage::getStoreConfig('pticker/general/title');
+if($title == ''){$title = 'LATEST PRODUCT :';}
+$margin = 2 + 7 * strlen($title);
+
+$titleColor= Mage::getStoreConfig('pticker/color/text');
+if($titleColor == ''){$titleColor = '#505050';}
+
+$linkColor= Mage::getStoreConfig('pticker/color/link');
+if($linkColor == ''){ $linkColor = '#1F4F82';}
+
+$backgroundColor= Mage::getStoreConfig('pticker/color/background');
+if($backgroundColor == ''){$backgroundColor = '#FFF';}
+
+$buttonStyle= Mage::getStoreConfig('pticker/color/button');
+if($buttonStyle == ''){$buttonStyle = 'gray';}
+$left = 'ticker/left-'.$buttonStyle.'.png';
+$right = 'ticker/right-'.$buttonStyle.'.png';
+$play = 'ticker/play-'.$buttonStyle.'.png';
+$pause = 'ticker/pause-'.$buttonStyle.'.png';
+
+$borderColor= Mage::getStoreConfig('pticker/color/border');
+if($borderColor == ''){$borderColor = '#CCC';}
+
+$animation= Mage::getStoreConfig('pticker/effect/animation');
+$dirNav= Mage::getStoreConfig('pticker/effect/directionalnav');
+$animationSpeed= Mage::getStoreConfig('pticker/effect/animationspeed');
+if($animationSpeed == ''){$animationSpeed = 500;}
+
+/*isActive*/
+if($isActive != 0){
+$product = $this->getProducts();
+//print_r($product);die;
+if(count($product) > 0){
+?>
+
+<style>
+div.orbit span#img { margin:0 0 0 <?php echo $margin;?>px; float:left; position: absolute; top: 0; left: 0; background: <?php echo $backgroundColor;?>;  width:951px; height:25px; padding: 9px 5px 0 10px; text-align: left;}
+div.orbit span#img a{color: <?php echo $linkColor;?>; text-decoration: none}
+div.orbit span#img strong{ padding: 0 10px 0 0; display:block;}
+div#featured{border-bottom: 2px <?php echo $borderColor;?> solid; background:<?php echo $backgroundColor;?>;}
+span.pause {display: block;width: 18px; height: 17px;position: absolute;top: 9px;left: 0px;background: url("<?php echo $this->getSkinUrl($pause);?>") no-repeat;z-index: 4;opacity: 0.7;}
+span.pause.active {display: block;width: 35px;height: 17px;position: absolute;top: 9px;left: 0px;background: url("<?php echo $this->getSkinUrl($play);?>") no-repeat;z-index: 4;opacity: 0.7;}
+
+div.slider-nav span.right { background: url("<?php echo $this->getSkinUrl($right);?>") no-repeat;  right: 8px; opacity: 0.7;}
+div.slider-nav span.left { background: url("<?php echo $this->getSkinUrl($left);?>") no-repeat;  right: 25px; opacity: 0.7;}
+div.pttitle{padding: 0 0 0 10px; position:absolute; text-align: left; top:9px; left:0; z-index: 1000; color: <?php echo $titleColor;?>;}
+</style>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var $j = jQuery.noConflict();
+    //]]>
+</script>
+
+<div class="tickercontainer">
+    <div id="featured">
+        <div class="pttitle"><strong><?php echo $this->__($title);?></strong></div>
+        <?php
+        foreach($product as $item){
+        ?>
+        <span id="img"><a href="<?php echo $item['link']; ?>"><?php echo $item['title']; ?></a></span>
+        <?php }?>
+    </div>
+    <?php if(count($product) == 1){?>
+    <script type="text/javascript">
+        $j('#featured').orbit({
+            'timer' : false,
+            'animation' : false,
+            'directionalNav' : false
+        });
+    </script>
+    <?php } else{ ?>
+    <script type="text/javascript">
+        $j('#featured').orbit({
+            'timer' : true,
+            'animation' : '<?php echo $animation;?>',
+            'directionalNav' : <?php echo $dirNav;?>,
+            'animationSpeed': <?php echo $animationSpeed;?>,
+            'startClockOnMouseOut': true,
+            'startClockOnMouseOutAfter': 8000
+        });
+    </script>
+    <?php }?>
+</div>
+<?php
+}
+}
+/*isActive*/
+?>

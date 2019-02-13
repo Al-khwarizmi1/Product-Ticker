@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <apptha translate="label" module="pticker">
+            <label>Apptha</label>
+            <sort_order>190</sort_order>
+        </apptha>
+    </tabs>
+    <sections>
+        <pticker translate="label comment" module="pticker">
+            <tab>apptha</tab>
+            <label>Product Ticker</label>
+            <frontend_type>text</frontend_type>
+            <sort_order>120</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment" module="pticker">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Active:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Activate Ticker.</comment>
+                        </active>
+                        <title translate="label">
+                            <label>Main Title:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Title that apears in the ticker. (ex : Latest Product).</comment>
+                        </title>
+                    </fields>
+                </general>
+                <color translate="label comment" module="pticker">
+                    <label>Colors</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>15</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <text translate="label">
+                            <label>Title Text Color:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Title text color. (default: #505050, format: start with '#' and 6 digits long)</comment>
+                        </text>
+                        <link translate="label">
+                            <label>Link Text Color:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Link text color. (default: #1F4F82, format: start with '#' and 6 digits long)</comment>
+                        </link>
+                        <linktext translate="label">
+                            <label>Link Text Length:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Link text length. (default: 100)</comment>
+                        </linktext>
+                        <background translate="label">
+                            <label>Background Color:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Background color. (default: #FFFFFF, format: start with '#' and 6 digits long)</comment>
+                        </background>
+                        <border translate="label">
+                            <label>Border Color:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Border color. (default: #CCCCCC, format: start with '#' and 6 digits long)</comment>
+                        </border>
+                        <button translate="label">
+                            <label>Button Color:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>pticker/button</source_model>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Choose the Button color.</comment>
+                        </button>
+                    </fields>
+                </color>
+                <effect translate="label comment" module="pticker">
+                    <label>Effects</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>16</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <animation translate="label">
+                            <label>Animation Effect:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>pticker/animation</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Choose a Animation effect</comment>
+                        </animation>
+                        <animationspeed translate="label">
+                            <label>Animation Speed:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Animation Speed. (Default: 500, 1 Second = 1000)</comment>
+                        </animationspeed>
+                        <directionalnav translate="label">
+                            <label>Directional Navigation:</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Enable or disable directional navigation</comment>
+                        </directionalnav>
+                       
+                    </fields>
+                </effect>
+            </groups>
+        </pticker>
+    </sections>
+</config>

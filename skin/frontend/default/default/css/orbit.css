@@ -1,0 +1,27 @@
+/* ORBIT.CSS CONTAINER*/
+.tickercontainer{margin:0 0 0 50px; width: 950px; margin: 0 auto;}
+div.orbit { width: 1px; height: 1px; position: relative;  overflow: hidden; }
+
+div.orbit a img { border: none; }
+
+div.orbit span#img a:hover{text-decoration: underline;}
+
+
+/* TIMER */
+div.timer { width: 18px; height: 26px; overflow: hidden; position: absolute; top: -1px; right:47px; cursor: pointer; z-index: 1001; }
+span.rotator { display: block; width: 40px; height: 40px; position: absolute; top: 0; left: -20px; z-index: 3; }
+span.mask { display: block; width: 20px; height: 40px; position: absolute; top: 0; right: 0; z-index: 2; overflow: hidden; }
+span.rotator.move { left: 0; }
+span.mask.move { width: 40px; left: 0;}
+
+
+div.timer:hover span.pause,
+span.pause.active,
+div.timer:hover span.pause.active { opacity: 1;}
+
+/* DIRECTIONAL NAV */
+div.orbit:hover div.slider-nav { display: block;}
+div.slider-nav { display: block; }
+div.slider-nav span { width: 18px; height: 18px; text-indent: -9999px; position: absolute; z-index: 1000; top: 23%; cursor: pointer; }
+
+div.slider-nav span.right:hover, div.slider-nav span.left:hover{opacity: 1;}

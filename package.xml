@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+    <name>Apptha_Pticker</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>The Product Ticker extension is very helpful in promoting your product. This extension is used to display the particular &#xD;
+&#xD;
+products in the head of the site, which will be show in all pages. So if you are interested in displaying the products with &#xD;
+&#xD;
+special offers in all pages, you can do it with ease and even with a highlighted title for that particular product.</summary>
+    <description>The Product Ticker extension is very helpful in promoting your product. This extension is used to display the particular &#xD;
+&#xD;
+products in the head of the site, which will be show in all pages. So if you are interested in displaying the products with &#xD;
+&#xD;
+special offers in all pages, you can do it with ease and even with a highlighted title for that particular product.</description>
+    <notes>The Product Ticker extension is very helpful in promoting your product. This extension is used to display the particular &#xD;
+&#xD;
+products in the head of the site, which will be show in all pages. So if you are interested in displaying the products with &#xD;
+&#xD;
+special offers in all pages, you can do it with ease and even with a highlighted title for that particular product.</notes>
+    <authors><author><name>apptha</name><user>apptha</user><email>info@apptha.com</email></author></authors>
+    <date>2015-09-29</date>
+    <time>06:37:15</time>
+    <contents><target name="magelocal"><dir name="Apptha"><dir name="Pticker"><dir name="Block"><dir name="Adminhtml"><dir name="Pticker"><dir name="Edit"><file name="Form.php" hash="b96224522052aa47a95e3a8e203c4535"/><dir name="Tab"><file name="Form.php" hash="48cfb8f2612ed645e0e8919bf5ba705b"/></dir><file name="Tabs.php" hash="4263d18ff49ef1e46a86c2bb81d1eda0"/></dir><file name="Edit.php" hash="8fb34f160ea6deb1be5260d5df961fcc"/><file name="Grid.php" hash="b8196fdfb024031ba62603ff9c8ad23c"/></dir><file name="Pticker.php" hash="d91a97bb2c4e6fdc46aa8f6b2d97cf96"/></dir><file name="Pticker.php" hash="1575203cda9bd0808cd9a8f122709309"/></dir><dir name="Helper"><file name="Data.php" hash="9ac50123c13f19776f7489053a95eeae"/></dir><dir name="Model"><file name="Animation.php" hash="f3ddd78df024b899d1cf8da4ea2675d5"/><file name="Button.php" hash="cacf3aaf3e10ce9535b6976d18668a62"/><dir name="Mysql4"><dir name="Pticker"><file name="Collection.php" hash="b56522c97f7afb658bc06d62d52e6898"/></dir><file name="Pticker.php" hash="19a6179c8c2fe8302369f572bddd1f10"/></dir><file name="Pticker.php" hash="e6407e01ca1b60e5d5dead0ce5814f84"/><dir name="Resource"><dir name="Eav"><dir name="Mysql4"><file name="Setup.php" hash="d5c7bff3f6f22ed164f3a2a103daf5be"/></dir></dir></dir><file name="Status.php" hash="01ef4afd19047a64e41f9a5339ccc59c"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="PtickerController.php" hash="1b7a5c0bb8152d4a86847d2ddd991219"/></dir><file name="IndexController.php" hash="4f86b27aaeab00fbbf877f4ecfe15008"/></dir><dir name="etc"><file name="config.xml" hash="9721b971027c4fbc5df973fec51d0bdc"/><file name="system.xml" hash="e3ee1a817c9f83b70a741bc1a13b395a"/></dir><dir name="sql"><dir name="pticker_setup"><file name="mysql4-install-0.1.0.php" hash="3e75fb246757ed666d2dfb1fe999016d"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Apptha_Pticker.xml" hash="405f397053627c645132f31f6ff2e872"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="pticker.xml" hash="435c2116f25d0fb4dd7cd9f8e34b2b42"/></dir><dir name="template"><dir name="pticker"><file name="pticker.phtml" hash="bd32cbaf71be610c522d11756ba746e5"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="css"><file name="orbit.css" hash="f83b782a00d806b6ea929d10a00f9b74"/></dir><dir name="js"><file name="jquery-1.4.1.min.js" hash="10092eee563dec2dca82b77d2cf5a1ae"/><file name="jquery.orbit.min.js" hash="75137e0197138dc67117d642546135f9"/></dir><dir name="ticker"><file name="Thumbs.db" hash="4ea6b672d7d1d3d8d60b0e741b43d66c"/><file name="left-black.png" hash="4e31824f90188f6c3a1c95643c26e239"/><file name="left-gray.png" hash="cf1aadf9c8070bb4f328728ba862196c"/><file name="left-white.png" hash="977c6f06f2cfa13bae2d4fd26ac4768c"/><file name="pause-black.png" hash="ca98f336e61bdaa72c0aebcac93b0e58"/><file name="pause-gray.png" hash="57d088eb93688214a20c1bd367faaca5"/><file name="pause-white.png" hash="8083cb4af3d660226e679754293e518c"/><file name="play-black.png" hash="3a7c6c4755244437814c50963b1fe716"/><file name="play-gray.png" hash="ad41d6888471270678a5feb295cc356a"/><file name="play-white.png" hash="551c574166aa091ca4a0c9c097f3cc86"/><file name="right-black.png" hash="db484909316dd40a4b8efd31b490860b"/><file name="right-gray.png" hash="875289e2c6b2c8166d07695142bbe4ed"/><file name="right-white.png" hash="c986653780bb4a7196c12008441baadc"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

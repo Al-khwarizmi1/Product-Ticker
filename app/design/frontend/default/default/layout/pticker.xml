@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>css/orbit.css</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery-1.4.1.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery.orbit.min.js</name></action>
+        </reference>
+        <reference name="top.menu" after="topMenu">
+            <block type="pticker/pticker" name="pticker" template="pticker/pticker.phtml" />   
+        </reference>      
+    </default>
+    <pticker_index_index>
+        <reference name="content">
+            <block type="pticker/pticker" name="pticker" template="pticker/pticker.phtml" />
+        </reference>
+    </pticker_index_index>
+</layout> 
